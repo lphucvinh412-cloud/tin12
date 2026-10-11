@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lịch hoạt động CLB Thể thao</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        th, td {
+            vertical-align: middle;
+        }
+        td:nth-child(1), td:nth-child(2) {
+            text-align: left;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .intro-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-box">
+        <h2>Giới thiệu các hoạt động ngoại khoá</h2>
+        <p>Trường THPT Nguyễn Bỉnh Khiêm có bề dày thành tích về học tập và các hoạt động thể thao, văn nghệ của thành phố.</p>
+        <p>Các câu lạc bộ ngoại khoá hoạt động sôi nổi và luôn được nhà trường tạo điều kiện để sinh hoạt.</p>
+        <p>Những năm qua, trường đạt nhiều thành tích trong các cuộc thi cấp thành phố, quận:</p>
+        <ul>
+            <li>03 HCV cấp thành phố môn Bơi lội</li>
+            <li>02 HCV, 06 HCB và 05 HCĐ cấp thành phố các môn Võ thuật</li>
+            <li>01 giải ba môn Bóng đá nam cấp thành phố</li>
+            <li>01 giải nhì, 02 giải ba Hội thi biểu diễn âm nhạc quận</li>
+        </ul>
+        <p><a href="thong tin.html">Thông tin chi tiết của các CLB khác</a></p>
+    </div>
+
+    <!-- Bảng lịch hoạt động (Các tên CLB được gắn thẻ <a> trỏ đến id bên dưới) -->
+    <table id="CLBTT" style="width: 100%;">
+        <caption><b>Lịch hoạt động các CLB Thể thao</b></caption>
+        <tr>
+            <th rowspan="2">Bộ môn</th>
+            <th rowspan="2">GV phụ trách</th>
+            <th colspan="5">Ngày</th>
+        </tr>
+        <tr>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+        </tr>
+        <tr>
+            <td><a href="#bong-da">Bóng đá</a></td>
+            <td>Thầy Khải</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td><a href="#bong-chuyen">Bóng chuyền</a></td>
+            <td>Cô Lan</td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#bong-ro">Bóng rổ</a></td>
+            <td>Thầy Vũ</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#vo-thuat">Võ thuật</a></td>
+            <td>
+                Thầy Hoàng - Karatedo<br>
+                Thầy Đức - Taekwondo<br>
+                Thầy Thắng - Vovinam
+            </td>
+            <td>X</td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#boi">Bơi</a></td>
+            <td>Cô Bích</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <h1>Chi tiết giới thiệu các Câu lạc bộ</h1>
+
+    <!-- Giới thiệu CLB Bóng đá -->
+    <div id="bong-da" class="clb-detail">
+        <h3>1. Câu lạc bộ Bóng đá</h3>
+        <p><b>Địa điểm:</b> Sân vận động của trường</p>
+        <p><b>Số thành viên:</b> 25 thành viên</p>
+        <p><b>Thành tích:</b> Giải Ba môn Bóng đá nam cấp thành phố</p>
+        <p><b>Phí hội viên:</b> 50.000 VNĐ / tháng</p>
+        <p><b>Điện thoại liên hệ:</b> 0901234567 (Thầy Khải)</p>
+    </div>
+
+    <!-- Giới thiệu CLB Bóng chuyền -->
+    <div id="bong-chuyen" class="clb-detail">
+        <h3>2. Câu lạc bộ Bóng chuyền</h3>
+        <p><b>Địa điểm:</b> Sân thể thao đa năng</p>
+        <p><b>Số thành viên:</b> 18 thành viên</p>
+        <p><b>Thành tích:</b> Huy chương Bạc giải thể thao học sinh</p>
+        <p><b>Phí hội viên:</b> 40.000 VNĐ / tháng</p>
+        <p><b>Điện thoại liên hệ:</b> 0902345678 (Cô Lan)</p>
+    </div>
+
+    <!-- Giới thiệu CLB Bóng rổ -->
+    <div id="bong-ro" class="clb-detail">
+        <h3>3. Câu lạc bộ Bóng rổ</h3>
+        <p><b>Địa điểm:</b> Sân bóng rổ ngoài trời</p>
+        <p><b>Số thành viên:</b> 20 thành viên</p>
+        <p><b>Thành tích:</b> Top 4 giải bóng rổ cấp tỉnh</p>
+        <p><b>Phí hội viên:</b> 50.000 VNĐ / tháng</p>
+        <p><b>Điện thoại liên hệ:</b> 0903456789 (Thầy Vũ)</p>
+    </div>
+
+    <!-- Giới thiệu CLB Võ thuật -->
+    <div id="vo-thuat" class="clb-detail">
+        <h3>4. Câu lạc bộ Võ thuật</h3>
+        <p><b>Địa điểm:</b> Phòng học đa năng số 2</p>
+        <p><b>Số thành viên:</b> 40 thành viên</p>
+        <p><b>Thành tích:</b> 02 Huy chương Vàng, 06 Huy chương Bạc và 05 Huy chương Đồng cấp thành phố</p>
+        <p><b>Phí hội viên:</b> 60.000 VNĐ / tháng</p>
+        <p><b>Điện thoại liên hệ:</b> 0904567890 (Thầy Hoàng)</p>
+    </div>
+
+    <!-- Giới thiệu CLB Bơi lội -->
+    <div id="boi" class="clb-detail">
+        <h3>5. Câu lạc bộ Bơi lội</h3>
+        <p><b>Địa điểm:</b> Hồ bơi trung tâm thể thao thành phố</p>
+        <p><b>Số thành viên:</b> 15 thành viên</p>
+        <p><b>Thành tích:</b> 03 Huy chương Vàng cấp thành phố môn Bơi lội</p>
+        <p><b>Phí hội viên:</b> 100.000 VNĐ / tháng</p>
+        <p><b>Điện thoại liên hệ:</b> 0905678901 (Cô Bích)</p>
+    </div>
+
+</body>
+</html>
